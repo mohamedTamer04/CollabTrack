@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="764.0"
+          style="-fx-background-color: rgba(208,225,250,1.0);-fx-background-image: url('com/example/collabtrack/CollabTrackBlurred.jpg');
+                 -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;"
+          xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.collabtrack.MusicianMessagePage">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES"/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="100.0"/>
+    </rowConstraints>
+
+    <children>
+        <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="700.0"
+              style="-fx-border-color: black; -fx-border-width: 3px; -fx-border-radius: 10px;" translateX="285.0"
+              GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="11">
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </Pane>
+
+        <TextArea fx:id="messageArea1" visible="false" prefHeight="73.0" prefWidth="229.0"
+                  style="-fx-background-color: black; -fx-text-fill: black; -fx-font-size: 18px; -fx-font-weight: bold;
+                         -fx-background-radius: 10px; -fx-wrap-text: true;" translateY="-20.0" translateX="-50.0"
+                  GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.columnSpan="2"
+                  GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextArea>
+
+        <Button fx:id="sender1" onAction="#recieveMessage" visible="false" cache="true" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0"
+                style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 25px;" text=""
+                textAlignment="LEFT" translateX="-170" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND"/>
+            </cursor>
+        </Button>
+
+        <TextArea fx:id="messageArea2" visible="false" prefHeight="73.0" prefWidth="229.0"
+                  style="-fx-background-color: black; -fx-text-fill: black; -fx-font-size: 18px; -fx-font-weight: bold;
+                         -fx-background-radius: 10px; -fx-wrap-text: true;" translateY="-20.0" translateX="-50.0"
+                  GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.columnSpan="2"
+                  GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextArea>
+
+        <Button fx:id="sender2" visible="false" onAction="#recieveMessage" cache="true" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0"
+                style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 25px;" text=""
+                textAlignment="LEFT" translateX="-170" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND"/>
+            </cursor>
+        </Button>
+
+        <TextArea fx:id="messageArea3" visible="false" prefHeight="73.0" prefWidth="229.0"
+                  style="-fx-background-color: black; -fx-text-fill: black; -fx-font-size: 18px; -fx-font-weight: bold;
+                         -fx-background-radius: 10px; -fx-wrap-text: true;" translateY="-20.0" translateX="-50.0"
+                  GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.columnSpan="2"
+                  GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextArea>
+
+        <Button fx:id="sender3" visible="false" onAction="#recieveMessage" cache="true" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0"
+                style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 25px;" text=""
+                textAlignment="LEFT" translateX="-170" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND"/>
+            </cursor>
+        </Button>
+
+        <TextArea fx:id="messageArea4" visible="false" prefHeight="73.0" prefWidth="229.0"
+                  style="-fx-background-color: black; -fx-text-fill: black; -fx-font-size: 18px; -fx-font-weight: bold;
+                         -fx-background-radius: 10px; -fx-wrap-text: true;" translateY="-20.0" translateX="-50.0"
+                  GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="9" GridPane.columnSpan="2" GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextArea>
+
+        <Button fx:id="sender4" onAction="#recieveMessage" visible="false" cache="true" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0"
+                style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 25px;" text=""
+                textAlignment="LEFT" translateX="-170" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                GridPane.halignment="LEFT" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND"/>
+            </cursor>
+        </Button>
+
+        <TextArea fx:id="messageArea5" visible="false" prefHeight="73.0" prefWidth="229.0"
+                  style="-fx-background-color: black; -fx-text-fill: black; -fx-font-size: 18px; -fx-font-weight: bold;
+                         -fx-background-radius: 10px; -fx-wrap-text: true;" translateY="-20.0" translateX="-50.0"
+                  GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.columnSpan="2"
+                  GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </TextArea>
+
+        <Button fx:id="sender5" onAction="#recieveMessage" visible="false" cache="true" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0"
+                style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 25px;" text=""
+                textAlignment="LEFT" translateX="-170" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND"/>
+            </cursor>
+        </Button>
+
+        <Button fx:id="backButton" onAction="#handleBackButton" text="Back" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <style>
+                -fx-text-fill: white; /* White text color */
+                -fx-font-weight: bold; /* Bold font */
+                -fx-background-color: black; /* Black background color */
+                -fx-background-radius: 10; /* Rounded corners */
+            </style>
+        </Button>
+    </children>
+</GridPane>
+

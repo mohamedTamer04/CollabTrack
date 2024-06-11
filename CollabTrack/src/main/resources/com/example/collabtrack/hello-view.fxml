@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(208,225,250,1.0);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.collabtrack.HelloController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('com/example/collabtrack/CollabTrack.png'); -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;" GridPane.columnIndex="1" />
+
+        <Button fx:id="singerButton" blendMode="DARKEN" mnemonicParsing="false" onAction="#loadSingerHomePage" prefHeight="80.0" prefWidth="200.0" text="Singer" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <style>
+                -fx-text-fill: white; /* White text color */
+                -fx-font-weight: bold; /* Bold font */
+                -fx-background-color: black; /* Black background color */
+                -fx-background-radius: 10; /* Rounded corners */
+            </style>
+        </Button>
+
+        <Button fx:id="musicianButton" blendMode="DARKEN" mnemonicParsing="false" prefHeight="80.0" onAction ="#loadMusicianHomePage" prefWidth="200.0" text="Musician" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <style>
+                -fx-text-fill: white; /* White text color */
+                -fx-font-weight: bold; /* Bold font */
+                -fx-background-color: black; /* Black background color */
+                -fx-background-radius: 10; /* Rounded corners */
+            </style>
+        </Button>
+
+        <Button fx:id="studioButton" blendMode="DARKEN" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" text="Studio" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <style>
+                -fx-text-fill: white; /* White text color */
+                -fx-font-weight: bold; /* Bold font */
+                -fx-background-color: black; /* Black background color */
+                -fx-background-radius: 10; /* Rounded corners */
+            </style>
+        </Button>
+
+        <Pane fx:id="singerPane" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('com/example/collabtrack/Singer.png'); -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;" visible="false" GridPane.rowIndex="2" />
+
+        <Pane fx:id="musicianPane" layoutX="10.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('com/example/collabtrack/Musician.png'); -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Pane fx:id="studioPane" layoutX="210.0" layoutY="276.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-image: url('com/example/collabtrack/Studio.png'); -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    </children>
+</GridPane>

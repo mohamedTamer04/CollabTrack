@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1001.0" style="-fx-background-color: rgba(208,225,250,1.0);-fx-background-image: url('com/example/collabtrack/CollabTrackBlurred.jpg'); -fx-background-size: contain; -fx-background-position: center center; -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.collabtrack.MusicianProfilePage">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="100.0" />
+    </rowConstraints>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Name:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="nameLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Email:" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="emailLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Phone Number:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="phoneLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Genre:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="genreLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Instrument:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="instrumentLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Language:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="languageLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Bio:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="bioLabel" translateX="30.0" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="600" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-wrap-text: true; -fx-padding: 4px;" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="TOP" GridPane.columnSpan="3" GridPane.rowSpan="3">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER_RIGHT" translateX="30.0" prefHeight="36.0" prefWidth="110.0" text="Gender:" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="TOP">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="genderLabel" translateX="30.0" alignment="CENTER" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="9" GridPane.valignment="TOP">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="usernameLabel" alignment="CENTER" layoutX="210.0" layoutY="157.0" prefHeight="61.0" prefWidth="258.0" style="-fx-text-fill: black; -fx-font-size: 32px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowSpan="2">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Button alignment="CENTER" onAction="#handleBackButton" cache="true" cancelButton="true" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 20px;" text="✖" textAlignment="CENTER" translateY="30.0" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+        <text>
+            <Text opacity="1" text="✖" />
+        </text>
+        <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+        </cursor>
+    </Button>
+    <Pane prefHeight="394.0" prefWidth="454.0" style="-fx-border-color: black; -fx-border-width: 3px; -fx-border-radius: 10px;" translateX="-30.0" translateY="-30.0" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="3" GridPane.rowSpan="2147483647">
+        <children>
+            <Button alignment="CENTER" cache="true" cancelButton="true" layoutX="377.0" layoutY="14.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="228.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 30px;" text="Edit Profile" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="OPEN_HAND" />
+                </cursor>
+            </Button>
+        </children></Pane>
+    <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="250.0" style="-fx-border-color: black; -fx-border-width: 3px; -fx-border-radius: 10px;" translateX="30.0" translateY="-30.0" GridPane.rowIndex="3" GridPane.rowSpan="2147483647">
+        <children>
+            <Button alignment="CENTER" cache="true" onAction="#showSingersList" layoutX="25.0" layoutY="82.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 30px;" text="Singer List" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="OPEN_HAND" />
+                </cursor>
+            </Button>
+            <Button alignment="CENTER" cache="true" onAction="#openMessages" layoutX="25.0" layoutY="204.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 30px;" text="Messages" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="OPEN_HAND" />
+                </cursor>
+            </Button>
+            <Button alignment="CENTER" cache="true" cancelButton="true" layoutX="25.0" layoutY="324.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 30px;" text="Nearby Studios" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="OPEN_HAND" />
+                </cursor>
+            </Button>
+            <Button alignment="CENTER" cache="true" cancelButton="true" layoutX="25.0" layoutY="442.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 30px;" text="Settings" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="OPEN_HAND" />
+                </cursor>
+            </Button>
+        </children></Pane>
+</GridPane>
